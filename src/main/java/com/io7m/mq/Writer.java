@@ -43,7 +43,7 @@ public final class Writer
         locator.createSessionFactory();
       final var session =
         resources.add(
-          sessions.createSession(false, false));
+          sessions.createSession(true, true));
       final var producer =
         resources.add(
           session.createProducer("info.arc7.unrestricted.base"));

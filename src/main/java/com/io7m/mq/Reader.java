@@ -49,7 +49,7 @@ public final class Reader
 
       final var session =
         resources.add(
-          sessions.createSession(false, false));
+          sessions.createSession(true, true));
 
       final var qc = new QueueConfiguration("info.arc7.unrestricted.base.q");
       qc.setAddress("info.arc7.unrestricted.base");
